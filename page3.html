@@ -36,6 +36,35 @@
     </div>
   </nav>
 
+
+
+
+
+  <div class="offcanvas offcanvas-top" id="demo">
+    <div class="offcanvas-header">
+      <h1 class="offcanvas-title">Heading</h1>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+      <p>Some text lorem ipsum.</p>
+      <button class="btn btn-secondary" type="button">A Button</button>
+    </div>
+  </div>
+
+  <div class="container-fluid mt-3">
+    <h3>Top Offcanvas</h3>
+    <p>The .offcanvas-top class positions the offcanvas at the top of the page.</p>
+    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+      Toggle Top Offcanvas
+    </button>
+  </div>
+
+
+
+
+
+
+
   <!-- Carousel -->
 <div id="demo" class="carousel slide" data-bs-ride="carousel">
 
@@ -74,4 +103,142 @@
     <h3>i the rage</h3>
     <p>i the rage</p>
   </div>
+</div>
+
+
+<!-- The Modal -->
+<div class="modal" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">I miss the rage</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <h3I> miss the rage</h3>
+        <p> I miss the rage I miss the rageI miss the rageI miss the rageI miss the rageI miss the rageI miss the rageI miss the rageI miss the rageI miss the rageI miss the rageI miss the rageI miss the rageI miss the rageI miss the rageI miss the rageI miss the rage I miss the rage  I miss the rage  I miss the rage  I miss the rage  I miss the rage  I miss the rage  I miss the rage  I miss the rage  I miss the rage  I miss the rage  I miss the rage  I miss the rage  I miss the rage  I miss the rage  I miss the rage  I miss the rage  I miss the rage  I miss the rage  I miss the rage  I miss the rage  I miss the rage  I miss the rage  I miss the rage  I miss the rage  I miss the rage  I miss the rage  I miss the rage  I miss the rage  I miss the rage  I miss the rage  I miss the rage  I miss the rage  I miss the rage  I miss the rage  I miss the rage  I miss the rage  I miss the rage  I miss the rage  I miss the rage  I miss the.</p>
+        <p>I miss the rageI miss the rageI miss the rageI miss the rageI miss the rageI miss the rageI miss the rageI miss the rageI miss the rageI miss the rageI miss the rageI miss the rageI miss the rageI miss the rageI miss the rageI miss the rage </p>
+
+        <p>I miss the rageI miss the rageI miss the rageI miss the rageI miss the rageI miss the rageI miss the rageI miss the rageI miss the rageI miss the rageI miss the rageI miss the rageI miss the rageI miss the rageI miss the rage I miss the rageI missI miss the rageI missI miss the rageI missI miss the rageI missI miss the rageI missI miss the rageI missI miss the rageI missI miss the rageI missI miss the rageI missI miss the rageI missI miss the rageI missI miss the rageI missI miss the rageI missI miss the rageI missI miss the rageI missI miss the rageI missI miss the rageI missI miss the rageI missI miss the rageI missI miss the rageI missI miss the rageI missI miss the rageI missI miss the rageI missI miss the rageI missI miss the rageI missI miss the rageI missI miss the rageI missI miss the rageI missI miss the rageI missI miss the rageI missI miss the rageI missI miss the rageI missI miss the rageI missI miss the rageI missI miss the rageI miss </p>
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+    Open modal
+  </button>
+</div>
+
+<!-- The Modal -->
+<div class="modal fade" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Modal Heading</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        Modal body..
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<button type="button" class="btn btn-primary" data-bs-toggle="popover" title="Popover Header" data-bs-content="Some content inside the popover">i miss th rage</button>
+
+
+
+<button type="button" class="btn btn-primary" id="toastbtn">Show Toast</button>
+
+  <div class="toast">
+    <div class="toast-header">
+      <strong class="me-auto">I miss the rage</strong>
+      <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+    </div>
+    <div class="toast-body">
+      <p> i miss the rage </p>
+    </div>
+  </div>
+</div>
+
+<script>
+document.getElementById("toastbtn").onclick = function() {
+  var toastElList = [].slice.call(document.querySelectorAll('.toast'))
+  var toastList = toastElList.map(function(toastEl) {
+    return new bootstrap.Toast(toastEl)
+  })
+  toastList.forEach(toast => toast.show())
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+</head>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+ <div class="container-fluid">
+   <ul class="navbar-nav">
+
+     </li>
+   </ul>
+ </div>
+</nav>
+
+<div id="section1" class="container-fluid bg-success text-white" style="padding:100px 20px;">
+ <h1> i miss the rage</h1>
+ <p> i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage</p>
+ <p> i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage</p>
+</div>
+
+<div id="section2" class="container-fluid bg-warning" style="padding:100px 20px;">
+ <h1> i miss the rage</h1>
+ <p> i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the ragev i miss the rage i miss the rage</p>
+ <p> i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage</p>
+</div>
+
+<div id="section3" class="container-fluid bg-secondary text-white" style="padding:100px 20px;">
+ <h1> i miss the rage</h1>
+ <p> i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage</p>
+ <p> i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage i miss the rage</p>
 </div>

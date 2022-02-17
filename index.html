@@ -119,6 +119,27 @@
 
 
 
+<div class="offcanvas offcanvas-bottom" id="demo">
+  <div class="offcanvas-header">
+    <h1 class="offcanvas-title">Heading</h1>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+  </div>
+  <div class="offcanvas-body">
+    <p>Some text lorem ipsum.</p>
+    <button class="btn btn-secondary" type="button">A Button</button>
+  </div>
+</div>
+
+<div class="container-fluid mt-3">
+  <h3>Bottom Offcanvas</h3>
+  <p>The .offcanvas-bottom class positions the offcanvas at the bottom of the page.</p>
+  <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+    Toggle Bottom Offcanvas
+  </button>
+</div>
+
+
+
 <!-- Carousel -->
 <div id="demo" class="carousel slide" data-bs-ride="carousel">
 
@@ -150,8 +171,13 @@
 <span class="carousel-control-next-icon"></span>
 </button>
 </div>
-
-
+<div class="carousel-item">
+  <img src="miss-the-rage.gif" alt="Los Angeles">
+  <div class="carousel-caption">
+    <h3>Los Angeles</h3>
+    <p>We had such a great time in LA!</p>
+  </div>
+</div>
 
 
 <button type="button" class="btn">I miss the rage</button>
@@ -232,6 +258,15 @@ I miss the rage
 </ul>
 
 
+
+<br>
+
+
+
+
+
+
+<br>
 <div class="dropdown dropend">
     <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
     I miss the rage
@@ -262,6 +297,73 @@ I miss the rage
 <div id="demo" class="collapse">
   I miss the rage
 </div>
+
+
+<div class="container mt-3">
+  <h2>Modal Scroll Example</h2>
+  <p>Click on the button to open the modal.</p>
+
+  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+    Open modal
+  </button>
+</div>
+
+<!-- The Modal -->
+<div class="modal" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">I miss the rage</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <h3I> miss the rage</h3>
+          <p> I miss the rage I miss the rageI miss the rageI miss the rageI miss the rageI miss the rageI miss the rageI miss the rageI miss the rageI miss the rageI miss the rageI miss the rageI miss the rageI miss the rageI miss the rageI miss the rageI miss the rage I miss the rage  I miss the rage  I miss the rage  I miss the rage  I miss the rage  I miss the rage  I miss the rage  I miss the rage  I miss the rage  I miss the rage  I miss the rage  I miss the rage  I miss the rage  I miss the rage  I miss the rage  I miss the rage  I miss the rage  I miss the rage  I miss the rage  I miss the rage  I miss the rage  I miss the rage  I miss the rage  I miss the rage  I miss the rage  I miss the rage  I miss the rage  I miss the rage  I miss the rage  I miss the rage  I miss the rage  I miss the rage  I miss the rage  I miss the rage  I miss the rage  I miss the rage  I miss the rage  I miss the rage  I miss the rage  I miss the.</p>
+          <p>I miss the rageI miss the rageI miss the rageI miss the rageI miss the rageI miss the rageI miss the rageI miss the rageI miss the rageI miss the rageI miss the rageI miss the rageI miss the rageI miss the rageI miss the rageI miss the rage </p>
+
+          <p>I miss the rageI miss the rageI miss the rageI miss the rageI miss the rageI miss the rageI miss the rageI miss the rageI miss the rageI miss the rageI miss the rageI miss the rageI miss the rageI miss the rageI miss the rage I miss the rageI missI miss the rageI missI miss the rageI missI miss the rageI missI miss the rageI missI miss the rageI missI miss the rageI missI miss the rageI missI miss the rageI missI miss the rageI missI miss the rageI missI miss the rageI missI miss the rageI missI miss the rageI missI miss the rageI missI miss the rageI missI miss the rageI missI miss the rageI missI miss the rageI missI miss the rageI missI miss the rageI missI miss the rageI missI miss the rageI missI miss the rageI missI miss the rageI missI miss the rageI missI miss the rageI missI miss the rageI missI miss the rageI missI miss the rageI missI miss the rageI missI miss the rageI missI miss the rageI missI miss the rageI missI miss the rageI miss </p>
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<button type="button" class="btn btn-primary" data-bs-toggle="popover" title="Popover Header" data-bs-content="Some content inside the popover">i miss th rage</button>
+
+
+
+<button type="button" class="btn btn-primary" id="toastbtn">Show Toast</button>
+
+  <div class="toast">
+    <div class="toast-header">
+      <strong class="me-auto">I miss the rage</strong>
+      <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+    </div>
+    <div class="toast-body">
+      <p>i miss the reage</p>
+    </div>
+  </div>
+</div>
+
+<script>
+document.getElementById("toastbtn").onclick = function() {
+  var toastElList = [].slice.call(document.querySelectorAll('.toast'))
+  var toastList = toastElList.map(function(toastEl) {
+    return new bootstrap.Toast(toastEl)
+  })
+  toastList.forEach(toast => toast.show())
+}
+</script>
+
 
 
 
